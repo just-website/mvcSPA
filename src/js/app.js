@@ -2,7 +2,6 @@ import './../scss/style.scss';
 import Unsplash from './unsplash';
 import PerfectScrollbar from 'perfect-scrollbar';
 
-const unsplash = new Unsplash();
 
 
 //perfect scroll bar
@@ -14,4 +13,9 @@ const unsplash = new Unsplash();
     const ps = new PerfectScrollbar(element, {
         suppressScrollY: true
     });
+    element.addEventListener('mouseover', () => {
+        ps.update();
+    })
 })('.j-scroll-bar')
+
+const unsplash = new Unsplash();

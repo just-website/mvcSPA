@@ -1,4 +1,4 @@
-.header {
+.header-nav {
     padding: 10px 0;
     
 
@@ -28,18 +28,30 @@
         font-size: 14px;
         text-transform: none;
         margin-right: 20px;
+        line-height: 18px;
         cursor: pointer;
         opacity: .5;
+        transition: .25s;
+
+        &:hover {
+            font-weight: bold;
+            transition: .25s;
+            opacity: .75;
+        }
     }
 
+    
+
+    
+}
+
+header {
     &:after {
-        margin-top: 10px;
         display: block;
         content: '';
         width: 100%;
         height: 2px;
         background-color: rgba(0, 0, 0, .25);
+        margin-bottom: 30px;
     }
-
-    
 }

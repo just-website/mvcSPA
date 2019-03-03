@@ -4,18 +4,18 @@ import View from './view';
 
 export default class Unsplash {
     constructor() {
-        this.emitter = new EventEmitter;
         this.view = new View;
-        this.model = new Model(emitter);
+        this.model = new Model;
         this.controller = new Controller({
             model: this.model,
             view: this.view
         });
-        this.state = {};
+
+        this.init();
     }
 
     init() {
-        this.view.init();
+        
     }
 
 }

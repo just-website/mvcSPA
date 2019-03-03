@@ -1,26 +1,13 @@
 class EventEmitter {
     constructor() {
-        this.events = {};
+        this._events = {};
     }
-
-    emit(eventName, data) {
-        const event = this.events[eventName];
-        if (event) {
-            event.forEach(fn => {
-                fn.call(null, data);
-            });
-        }
+    on(evt, listener) {
+        (this._events[evt] || (this._events[evt] = [])).push(listener);
+        return this;
     }
-
-    on(eventName, fn) {
-        if (!this.events[eventName]) {
-            this.events[eventName] = [];
-        }
-
-        this.events[eventName].push(fn);
-        return () => {
-            this.events[eventName] = this.events[eventName].filter(eventFn => fn !== eventFn);
-        }
+    emit(evt, arg) {
+        (this._events[evt] || []).slice().forEach(lsn => lsn(arg));
     }
 }
 
