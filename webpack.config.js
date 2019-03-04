@@ -44,6 +44,5 @@ module.exports = (env, options) => {
     conf.devtool = options.mode === "production" ? 
                     false :
                     "cheap-eval-source-map";
-
     return conf;
 };
