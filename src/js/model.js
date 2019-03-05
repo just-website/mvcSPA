@@ -1,12 +1,8 @@
 const AccessKey = 'dc698e73290315d4c63f3beedbeb919bca09450b105a8c2422b49a0d18d651dd';
-const SecretKey = '164490b919c7331c58fd0d665735627e1088fbd2e6deb7c7e4bd34bf1a711d9c';
 const URL = 'https://api.unsplash.com/'
-import EventEmitter from './eventEmitter';
 
-export default class Model extends EventEmitter {
+export default class Model {
     constructor() {
-        super();
-        this.state = [];
     }
 
     _getRequest(target) {

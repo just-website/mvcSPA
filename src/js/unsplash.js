@@ -10,12 +10,5 @@ export default class Unsplash {
             model: this.model,
             view: this.view
         });
-
-        this.init();
     }
-
-    init() {
-        
-    }
-
 }

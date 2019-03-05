@@ -1,4 +1,4 @@
-class EventEmitter {
+export default class EventEmitter {
     constructor() {
         this._events = {};
     }
@@ -10,5 +10,3 @@ class EventEmitter {
         (this._events[evt] || []).slice().forEach(lsn => lsn(arg));
     }
 }
-
-export default EventEmitter;

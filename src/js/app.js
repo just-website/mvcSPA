@@ -2,8 +2,6 @@ import './../scss/style.scss';
 import Unsplash from './unsplash';
 import PerfectScrollbar from 'perfect-scrollbar';
 
-
-
 //perfect scroll bar
 (function(scrollBar) {
     const element = document.querySelector(scrollBar);

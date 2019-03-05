@@ -20,6 +20,10 @@ const conf = {
                 exclude: '/node_modules/'
             },
             {
+                test: /\.png$/,
+                loader: "file-loader"
+            },
+            {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
