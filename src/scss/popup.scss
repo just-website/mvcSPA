@@ -12,14 +12,17 @@
 
 .popup {
     position: absolute;
-    width: 660px;
+    max-width: 660px;
     top: 0;
-    left: calc(50% - 350px);
     background-color: #ffffff;
     padding: 40px;
     font-weight: bold;
     margin-top: 160px;
     margin-bottom: 100px;
+
+    @media (min-width: 680px) {
+        left: calc(50% - 330px);
+    }
     
     .popup__dscr {
         display: flex;
@@ -72,7 +75,7 @@
         height: 25px;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(/www/img/icons/like-icon.png);
+        background-image: url('www/img/icons/like-icon.png');
         cursor: pointer;
         transition: .25s;
         position: relative;
@@ -86,7 +89,7 @@
     }
 
     .popup__download-icon {
-        background-image: url('/www/img/icons/download-icon.png');
+        background-image: url('www/img/icons/download-icon.png');
         width: 18px;
         top: 6px;
     }
