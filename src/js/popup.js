@@ -36,7 +36,7 @@ export default class Popup extends EventEmitter {
             </div>
             <div class="popup__dscr">
                 <div class="popup__dscr-info">${data.dscr}</div>
-                <div class="popup__dscr-info">date: ${data.date}</div>
+                <div class="popup__dscr-info">date: ${new Date(data.date).toLocaleString()}</div>
                 <div class="popup__dscr-info">downloads: ${data.downloads}</div>
                 <div class="popup__dscr-info">likes: ${data.likes}<div class="popup__like-icon j-like"></div></div>
                 <div class="popup__dscr-info"><a href="${data.link}" download>Download<div class="popup__download-icon j-download"></div></a></div>

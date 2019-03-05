@@ -75,7 +75,7 @@
         height: 25px;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url('www/img/icons/like-icon.png');
+        background-image: url('../img/icons/like-icon.png');
         cursor: pointer;
         transition: .25s;
         position: relative;
@@ -89,7 +89,7 @@
     }
 
     .popup__download-icon {
-        background-image: url('www/img/icons/download-icon.png');
+        background-image: url('../img/icons/download-icon.png');
         width: 18px;
         top: 6px;
     }
