@@ -128,8 +128,9 @@ header:after {
     cursor: pointer;
     transition: .25s; }
     .collections p:last-of-type:hover {
-      font-weight: bold;
-      transition: .25s; }
+      font-weight: 800;
+      transition: .25s;
+      opacity: .5; }
 
 .popup-wrapper {
   display: none;
@@ -179,7 +180,7 @@ header:after {
       width: 3px;
       height: 15px;
       background-color: #000;
-      top: 3px;
+      top: 0;
       right: -20px;
       transform: rotate(45deg); }
     .popup .popup__close::after {

@@ -42,7 +42,7 @@
             max-width: 100%;
         }
     }
-    
+
     .collection-photo {
         cursor: pointer;
     }
@@ -58,8 +58,9 @@
         transition: .25s;
 
         &:hover {
-            font-weight: bold;
-            transition: .25s
+            font-weight: 800;
+            transition: .25s;
+            opacity: .5;
         }
     }
 }

@@ -23,7 +23,7 @@
     @media (min-width: 680px) {
         left: calc(50% - 330px);
     }
-    
+
     .popup__dscr {
         display: flex;
         flex-wrap: wrap;
@@ -48,7 +48,7 @@
         font-size: 14px;
         right: 40px;
         cursor: pointer;
-        
+
         &::before,
         &::after {
             display: block;
@@ -57,7 +57,7 @@
             width: 3px;
             height: 15px;
             background-color: #000;
-            top: 3px;
+            top: 0;
             right: -20px;
             transform: rotate(45deg);
         }
@@ -81,7 +81,7 @@
         position: relative;
         top: 4px;
         margin-left: 12px;
-        
+
         &.is-active {
             transition: .25s;
             transform: scale(1.25);
